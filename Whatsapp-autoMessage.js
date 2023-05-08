@@ -34,7 +34,7 @@ client.on('ready', async () => {
         } catch (error) {
             console.error(`Failed to send message and picture to ${number}: ${error.message}`);
         }
-        await new Promise(resolve => setTimeout(resolve, 1000)); // Add a delay of 1 seconds between sending messages
+        await new Promise(resolve => setTimeout(resolve, 5000)); // Add a delay of 5 seconds between sending messages
     }
 
     client.destroy();
