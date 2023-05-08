@@ -7,6 +7,10 @@ This Node.js script uses the WhatsApp Web API to send a message and an image to 
 - Node.js 12 or higher
 - A valid WhatsApp account
 
+## Installing Required Dependencies
+
+The required dependencies for this script can be installed by running `npm install` in the project directory.
+
 ## Installation
 
 1. Clone this repository to your local machine.
@@ -14,6 +18,7 @@ This Node.js script uses the WhatsApp Web API to send a message and an image to 
 3. Edit the `numbers.txt` file to include the phone numbers you want to send messages to, one number per line.
 4. Replace `cat.png` in `IMAGE_FILE_PATH` with the path to the image file you want to send.
 5. Replace `MESSAGE` with the message you want to send.
+
 
 ## Usage
 
@@ -27,4 +32,4 @@ You can customize the script to send different types of media files by replacing
 
 ## License
 
-This project is licensed under the BOOST Software License
+This project is licensed under the Boost Software License 1.0
