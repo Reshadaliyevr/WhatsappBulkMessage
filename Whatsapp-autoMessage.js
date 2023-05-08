@@ -5,8 +5,8 @@ const { Client } = require('whatsapp-web.js');
 const { MessageMedia } = require('whatsapp-web.js');
 
 const NUMBERS_FILE_PATH = './numbers.txt';
-const IMAGE_FILE_PATH = 'C:/Users/Rashad/Desktop/Temp/Whatsapp/cat.png'; // Replace with the path to your image file
-const MESSAGE = 'test6';
+const IMAGE_FILE_PATH = './cat.png'; // Replace with the path to your image file
+const MESSAGE = 'Your Message';
 
 const client = new Client();
 
@@ -28,13 +28,13 @@ client.on('ready', async () => {
     for (const number of numbers) {
         const formattedNumber = `${number}@c.us`;
         try {
-            await client.sendMessage(formattedNumber, imageMedia, { caption: '' });
+            await client.sendMessage(formattedNumber, imageMedia, { caption: 'Image Caption here' });
             await client.sendMessage(formattedNumber, MESSAGE);
             console.log(`Message and picture sent to ${number}`);
         } catch (error) {
             console.error(`Failed to send message and picture to ${number}: ${error.message}`);
         }
-        await new Promise(resolve => setTimeout(resolve, 1000)); // Add a delay of 5 seconds between sending messages
+        await new Promise(resolve => setTimeout(resolve, 1000)); // Add a delay of 1 seconds between sending messages
     }
 
     client.destroy();
