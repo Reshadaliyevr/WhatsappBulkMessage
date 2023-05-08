@@ -9,7 +9,7 @@ This Node.js script uses the WhatsApp Web API to send a message and an image to 
 
 ## Installing Required Dependencies
 
-The required dependencies for this script can be installed by running `npm install package.json` in the project directory.
+The required dependencies for this script can be installed by running `npm install` in the project directory.
 
 ## Installation
 
