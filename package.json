@@ -1,0 +1,11 @@
+{
+  "name": "whatsapp-message-image-sender",
+  "version": "1.0.0",
+  "description": "A Node.js script that uses the WhatsApp Web API to send a message and an image to multiple phone numbers.",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "qrcode-terminal": "^0.12.0",
+    "whatsapp-web.js": "^2.0.0"
+  }
+}
