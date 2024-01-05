@@ -1,4 +1,4 @@
-# WhatsApp Message and Image Sender
+# WhatsApp Bulk Message and Image Sender
 
 This Node.js script uses the WhatsApp Web API to send a message and an image to multiple phone numbers. The script reads phone numbers from a text file, formats them for use with the WhatsApp API, and sends a message and an image to each phone number. The script uses the `whatsapp-web.js` library to interact with the WhatsApp Web API and supports sending different types of media files. The script also includes error handling and a delay between sending messages to avoid triggering anti-spam measures.
 
